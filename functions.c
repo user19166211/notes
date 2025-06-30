@@ -3,7 +3,7 @@
 // Connect to the database
 unique_ptr<sql::Connection> connectDB() {
     sql::Driver* driver = sql::mariadb::get_driver_instance();
-    const string db_url = "jdbc:mariadb://localhost:3306/cw2";
+    const string db_url = "jdbc:mariadb://localhost:3306/notes";
     
     sql::Properties properties({
         {"user", "db_user"}, {"password", "malware"}});
